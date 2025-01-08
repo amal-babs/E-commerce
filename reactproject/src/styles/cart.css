@@ -1,0 +1,63 @@
+/* General Cart Layout */
+.container {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+    border-radius: 10px;  /* Rounded corners for the container */
+    background-color: #ffffff;  /* White background for the cart */
+    padding: 30px;  /* Padding inside the container */
+  }
+  
+  .card-body {
+    padding: 15px;  /* Padding around the content of each card */
+  }
+  
+  /* Image Styling in Cart */
+  .card-body img {
+      transition: transform 0.3s ease-in-out;  /* Smooth transition for image scaling */
+  }
+  
+  .card-body img:hover {
+      transform: scale(1.05);  /* Slight zoom effect on image hover */
+  }
+  
+  /* Slide-in Animations (used in Cart items) */
+  @keyframes slideLeft {
+      from {
+        transform: translateX(100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+  }
+  
+  @keyframes slideRight {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+  }
+  
+  .slide-left {
+      animation: slideLeft 0.5s ease-in-out;  /* Animation for elements sliding in from the right */
+  }
+  
+  .slide-right {
+      animation: slideRight 0.5s ease-in-out;  /* Animation for elements sliding in from the left */
+  }
+  
+  /* Responsive Design for Cart */
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;  /* Reduced padding on mobile */
+    }
+  
+    .card-body img {
+      max-width: 100px;  /* Smaller images for mobile view */
+    }
+  }
+  

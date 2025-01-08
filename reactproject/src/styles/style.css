@@ -1,0 +1,25 @@
+/* Button Hover Effect (using existing .button-hover-effect class) */
+.button-hover-effect {
+  background-color: rgb(131, 167, 226); 
+  color: black;
+  margin-top: 5px;            
+  padding: 10px;       
+  border: none;             
+  border-radius: 20px;   
+  cursor: pointer;         
+  transition: background-color 0.3s ease; 
+  text-align: center;
+  width: 25%;              
+  height: auto; 
+}
+
+.button-hover-effect:hover {
+  background-color: #afbb3e; 
+}
+
+/* Responsive Button Adjustments */
+@media (max-width: 768px) {
+  .button-hover-effect {
+    width: 60%; /* Adjust button width for mobile */
+  }
+}
